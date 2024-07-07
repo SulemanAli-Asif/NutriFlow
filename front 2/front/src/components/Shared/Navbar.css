@@ -1,0 +1,121 @@
+/* Importing the Poppins font */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+
+/* Base styles */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+}
+.m
+{
+  display: flex;
+  width: 100%;
+  justify-content: center;
+}
+.container {
+  margin: 0 auto;
+  padding: 0 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar {
+  height: 100px;
+  background-color:#f0f9ff ;
+  position: relative;width: 80%;
+
+  border-bottom: 1px solid #cfcfcf;
+}
+
+.logo img {
+  height: 66px;
+  display: block;
+}
+
+.menu-icon {
+  display: none;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+.nav-elements {
+  display: flex;
+  align-items: center;
+}
+
+.nav-elements ul {
+  display: flex;
+  justify-content: space-between;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-elements ul li {
+  margin-right: 20px;
+}
+
+.nav-elements ul li a {
+  font-size: 16px;
+  font-weight: 400;
+  color: #2f234f;
+  text-decoration: none;
+  padding: 8px 15px;
+}
+
+.nav-elements ul li a.active {
+  color: #ee7a30;
+  font-weight: 500;
+  position: relative;
+}
+
+.nav-elements ul li a.login-button {
+  color: #2f234f;
+}
+
+.nav-elements ul li a.signup-button {
+  color: white;
+  background-color: #ee7a30;
+  border-radius: 5px;
+}
+
+@media (max-width: 768px) {
+  .menu-icon {
+    display: block;
+  }
+
+  .nav-elements {
+    position: absolute;
+    right: 0;
+    top: 60px;
+    background-color: #e5effe;
+    width: 0;
+    height: calc(100vh - 60px);
+    transition: all 0.3s ease-in-out;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .nav-elements.active {
+    width: 250px;
+  }
+
+  .nav-elements ul {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .nav-elements ul li {
+    margin: 15px 0;
+  }
+}
+
+@media (max-width: 600px) {
+  .nav-elements.active {
+    width: 100%;
+  }
+}

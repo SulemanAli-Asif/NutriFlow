@@ -1,0 +1,150 @@
+#ui-header
+{
+    margin-top: 4rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.line-border
+{
+    height: 2px;
+    width: 70%;
+    text-align: center;
+    align-items: center;
+    margin: 4rem auto;
+    background: #c9d0d6;
+}
+.nutri-container
+{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1rem;
+    width: 100%;
+
+}
+.transcription-result
+{
+    width: 32%;
+    display: flex;
+    flex-direction: column;
+}
+.video-details-container
+{
+    display: flex;
+    width: 100%;
+    padding: 1rem 0;
+    border-radius: 10px;
+}
+
+.video-details{
+    width: 100%;
+    display: flex;
+    margin:1rem;
+    padding:1rem;
+    border-radius: 12px;
+    border:2px solid rgb(196, 196, 196);
+    gap:10px;
+    justify-content: center;
+}
+.result-video
+{
+    width:30%;
+}
+.input-url
+{
+    font-size: 1rem;
+    width: 24rem;
+    padding: 1rem 0.4rem;
+    font-size: 0.9rem;
+}
+.nutri-table-container {
+    width: 100%;
+    overflow-x: auto;
+    border-radius: 10px;
+    box-shadow: -7px 9px 23px -7px rgba(221, 221, 221, 0.75);
+  }
+  
+  .nutri-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    
+    font-size: 18px;
+    text-align: left;
+  }
+  
+  .nutri-table th, .nutri-table td {
+    padding: 12px 15px;
+    border: 1px solid #ddd;
+  }
+  
+  .nutri-table th {
+    background-color: #f5f8ff;
+    color: #ee7a31;
+  }
+  
+  .nutri-table tr:nth-child(even) {
+    background-color: #ffffff;
+  }
+  
+  .nutri-table tr:hover {
+    background-color: #f1f1f1;
+  }
+@media (max-width:700px)
+{
+    .video-details-container
+    {
+        flex-direction: column;
+    }
+    .result-video{
+        width: 96%;
+        padding:0 0.6rem;
+    }
+    .transcription-result
+    {
+        width: 96%;
+        padding:0 0.6rem;
+    }
+}  
+
+/* ---------------- */
+
+.contact-main
+{
+    width: 100%;
+    margin: 7rem 0;
+}
+.contact-container
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.contact-cards
+{
+    display: flex;
+    gap: 2rem;
+    justify-content: center;
+}
+.contact-card
+{
+    width: 30%;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    justify-self: center;
+    align-items: center;
+    border: 1px solid #aab0c0;
+}
+.contact-icon
+{
+    font-size: 3rem;
+    color: #ee7a31;
+}
+.contact-card h3
+{
+    font-size: 1.6rem;
+}

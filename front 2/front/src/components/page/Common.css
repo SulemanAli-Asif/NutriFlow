@@ -1,0 +1,13 @@
+
+@media(max-width:600px)
+{
+       .home
+    {
+        margin: 3rem 0!important;
+        flex-direction: column;
+    }
+    #home-img
+    {
+        height: 270px;
+    }
+}
